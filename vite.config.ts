@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig(({ command }) => ({
   // CORREGIDO: Eliminamos '/malm85' del inicio. Solo debe ir el nombre del repositorio
-  base: command === 'build' 
+  base: process.env.NODE_ENV === 'production'
     ? '/malm85-curso-configuraci-n-entorno-linux-2025.io/' 
     : '/',
     
