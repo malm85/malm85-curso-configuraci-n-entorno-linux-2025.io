@@ -8,7 +8,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  base: process.env.VITE_BASE_URL || '/',
+  // ¡ESTA ES LA SOLUCIÓN DEFINITIVA! Rutas relativas universales
+  base: "./",
+
   plugins: [
     tailwindcss(), // 2. ¡DEBE ESTAR AQUÍ! Colócalo antes del plugin de React
     react()
