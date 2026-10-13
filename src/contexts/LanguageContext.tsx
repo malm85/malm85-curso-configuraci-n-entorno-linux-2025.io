@@ -61,10 +61,10 @@ const translations = {
     'footer.builtWith': 'Built with ❤️ using React & TypeScript',
     
     // About highlights
-    'about.highlights.experience': 'Professional Experience',
-    'about.highlights.projects': 'Successfully Delivered',
-    'about.highlights.tech': 'Latest Technologies',
-    'about.highlights.quality': 'Best Practices',
+    'about.highlights.professionalexperience': 'Professional Experience',
+    'about.highlights.successfullydelivered': 'Successfully Delivered',
+    'about.highlights.latesttechnologies': 'Latest Technologies',
+    'about.highlights.bestpractices': 'Best Practices',
   },
   es: {
     // Navigation
@@ -118,10 +118,10 @@ const translations = {
     'footer.builtWith': 'Construido con ❤️ usando React & TypeScript',
     
     // About highlights
-    'about.highlights.experience': 'Experiencia Profesional',
-    'about.highlights.projects': 'Proyectos Entregados',
-    'about.highlights.tech': 'Tecnologías Modernas',
-    'about.highlights.quality': 'Mejores Prácticas',
+    'about.highlights.professionalexperience': 'Experiencia Profesional',
+    'about.highlights.successfullydelivered': 'Proyectos Entregados',
+    'about.highlights.latesttechnologies': 'Tecnologías Modernas',
+    'about.highlights.bestpractices': 'Mejores Prácticas',
   }
 };
 

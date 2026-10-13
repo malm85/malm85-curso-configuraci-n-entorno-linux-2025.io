@@ -43,7 +43,13 @@ export function About() {
                         <Icon className="h-6 w-6 text-accent-foreground" />
                       </div>
                       <h3 className="font-bold text-lg mb-2">{highlight.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed break-words whitespace-normal px-2">{t(`about.highlights.${highlight.description.toLowerCase().replace(/\s+/g, '')}`)}</p>
+                      <p className="text-sm text-muted-foreground leading-normal break-words">
+                        {highlight.title.includes('5+') && t('about.highlights.professionalexperience')}
+                        {highlight.title.includes('20+') && t('about.highlights.successfullydelivered')}
+                        {highlight.title.includes('15+') && t('about.highlights.latesttechnologies')}
+                        {highlight.title.includes('Clean') && t('about.highlights.bestpractices')}
+                      </p>
+
                     </CardContent>
                   </Card>
                 );
