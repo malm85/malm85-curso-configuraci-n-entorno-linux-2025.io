@@ -42,25 +42,31 @@
 
   /* ESTA SECCIÓN OBLIGARÁ A LOS TEXTOS A VOLVERSE CLAROS EN MODO OSCURO */
   .dark {
-    --background: 222.2 84% 4.9%;          /* Fondo azul oscuro profundo */
-    --foreground: 210 40% 98%;             /* Texto principal (TÍTULOS) se vuelven BLANCO brillante */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --muted-foreground: 215 20.2% 75%;
+    --secondary: 217.2 32.6% 14.5%;
+    --secondary-foreground: 210 40% 98%;
     --border: 217.2 32.6% 25%;
-    --input: 217.2 32.6% 25%;
-    
-    --primary: 210 40% 98%;                /* Fondo de botones primarios */
-    --primary-foreground: 222.2 47.4% 11.2%; /* TEXTO DENTRO DE BOTONES se vuelve OSCURO para contrastar con el botón blanco */
-    
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;  /* Textos secundarios se vuelven gris claro legible */
-    
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;     /* Iconos y acentos se iluminan en blanco */
-    
-    --secondary: 217.2 32.6% 14.5%;        /* Fondo de botones secundarios */
-    --secondary-foreground: 210 40% 98%;  /* TEXTO DENTRO DE BOTONES SECUNDARIOS se vuelve BLANCO */
-    --ring: 212.7 26.8% 83.9%;
   }
 }
 
 /* 3. LE INDICAMOS A TAILWIND DÓNDE BUSCAR TUS CLASES EN REACT */
 @source "./**/*.{ts,tsx}";
+
+/* Anula cualquier color negro heredado en títulos y textos generales */
+.dark h1, .dark h2, .dark h3, .dark h4, .dark p, .dark span, .dark label, .dark div {
+  color: hsl(210 40% 98%) !important;
+}
+
+/* Fuerza a los botones estáticos a ser legibles con fondo gris o blanco */
+.dark button, .dark .btn, .dark [role="button"] {
+  color: hsl(210 40% 98%) !important;
+}
+
+/* Si tienes botones primarios con fondo blanco, fuerza su texto a ser oscuro */
+.dark button.bg-primary, .dark .btn-primary {
+  color: hsl(222.2 47.4% 11.2%) !important;
+}
