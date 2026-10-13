@@ -8,7 +8,7 @@ const content = {
       title: "Technical Support",
       subtitle: "Cibersecurity",
       greeting: "Hello, I'm",
-      profilePhoto: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/profile-photo.jpg",
+      profilePhoto: `${import.meta.env.BASE_URL}profile-photo.jpg`,
       cvUrl: "/path-to-your-cv.pdf"
     },
     about: {
@@ -41,7 +41,7 @@ const content = {
       {
         title: "Project Name",
         description: "Describe your project here. What it does, what problems it solves, and what technologies you used.",
-        image: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/project-ecommerce.jpg",
+        image: `${import.meta.env.BASE_URL}project-ecommerce.jpg`,
         technologies: ["React", "TypeScript", "Node.js"],
         github: "https://github.com/malm85/project",
         demo: "https://project-demo.vercel.app"
@@ -98,7 +98,7 @@ const content = {
       title: "Tecnologo en Sistemas",
       subtitle: "Soporte Tecnico",
       greeting: "Hola, soy",
-      profilePhoto: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/profile-photo.jpg",
+      profilePhoto: `${import.meta.env.BASE_URL}/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/profile-photo.jpg`,
       cvUrl: "/path-to-your-cv.pdf"
     },
     about: {
@@ -131,7 +131,7 @@ const content = {
       {
         title: "Nombre del Proyecto",
         description: "Describe tu proyecto aquí. Qué hace, qué problemas resuelve y qué tecnologías usaste.",
-        image: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/project-ecommerce.jpg",
+        image: `${import.meta.env.BASE_URL}project-ecommerce.jpg`,
         technologies: ["React", "TypeScript", "Node.js"],
         github: "https://github.com/malm85/project",
         demo: "https://project-demo.vercel.app"
@@ -190,7 +190,7 @@ export const portfolioConfig: PortfolioConfig = {
     title: "Technical Support",
     subtitle: "Cibersecurity",
     greeting: "Hello, I'm",
-    profilePhoto: "/profile-photo.png",
+    profilePhoto: `${import.meta.env.BASE_URL}profile-photo.png`,
     cvUrl: "/path-to-your-cv.pdf" // Optional - update this path
   },
 
@@ -237,7 +237,7 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "Project Name",
       description: "Describe your project here. What it does, what problems it solves, and what technologies you used.",
-      image: "/project-image.jpg",
+      image: `${import.meta.env.BASE_URL}project-image.jpg`,
       technologies: ["React", "TypeScript", "Node.js"],
       github: "https://github.com/malm85/project",
       demo: "https://project-demo.vercel.app"

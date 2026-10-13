@@ -9,7 +9,10 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  base: '/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/',
+  base: process.env.NODE_ENV === 'production' 
+  ? '/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/'
+  : '/',
+  
   plugins: [
     react(),
     tailwindcss()

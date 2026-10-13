@@ -78,7 +78,7 @@ export const portfolioConfig: PortfolioConfig = {
     title: "Your Title",
     subtitle: "Your subtitle or tagline",
     greeting: "Hello, I'm",
-          profilePhoto: "/profile-photo.png",
+    profilePhoto: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/profile-photo.png",
     cvUrl: "/path-to-your-cv.pdf" // Optional
   },
 
@@ -125,7 +125,7 @@ export const portfolioConfig: PortfolioConfig = {
     {
       title: "Project Name",
       description: "Describe your project here. What it does, what problems it solves, and what technologies you used.",
-              image: "/project-image.jpg",
+      image: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/project-image.jpg",
       technologies: ["React", "TypeScript", "Node.js"],
       github: "https://github.com/yourusername/project",
       demo: "https://project-demo.vercel.app"

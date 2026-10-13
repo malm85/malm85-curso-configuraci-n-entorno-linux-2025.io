@@ -86,9 +86,9 @@ export function Hero() {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-large animate-float">
                 <img 
-                  src={personal.profilePhoto} 
-                  alt={personal.name} 
-                  className="w-full h-full object-cover"
+                  src={`${import.meta.env.BASE_URL}profile-photo.jpg`} 
+                  alt="Foto de Perfil" 
+                  className="rounded-full object-cover ..."
                 />
               </div>
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-accent rounded-full opacity-20 animate-float" style={{ animationDelay: '1s' }}></div>
