@@ -21,7 +21,7 @@ export function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Text Content */}
             <div className="space-y-6">
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed break-words whitespace-normal px-2">
                 {about.description}
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -43,7 +43,7 @@ export function About() {
                         <Icon className="h-6 w-6 text-accent-foreground" />
                       </div>
                       <h3 className="font-bold text-lg mb-2">{highlight.title}</h3>
-                      <p className="text-sm text-muted-foreground">{t(`about.highlights.${highlight.description.toLowerCase().replace(/\s+/g, '')}`)}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed break-words whitespace-normal px-2">{t(`about.highlights.${highlight.description.toLowerCase().replace(/\s+/g, '')}`)}</p>
                     </CardContent>
                   </Card>
                 );
