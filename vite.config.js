@@ -8,18 +8,21 @@ import path from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig({
-  base: command === 'build' 
-  ? '/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/'
-  : '/',
+export default defineConfig(({ command }) => {
+  return {
+    // Ahora 'command' ya está definido correctamente por Vite
+    base: command === 'build' 
+    ? '/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/'
+    : '/',
 
-  plugins: [
-    react(),
-    tailwindcss()
-  ],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'), // Enseña a Vite que @ significa la carpeta src
+    plugins: [
+      react(),
+      tailwindcss()
+    ],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, './src'), // Enseña a Vite que @ significa la carpeta src
+      },
     },
-  },
+  };
 });
