@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-    base: "/argeris.github.io",
+    base: "/malm85/malm85-curso-configuraci-n-entorno-linux-2025.io/",
   server: {
     host: "::",
     port: 8080,
