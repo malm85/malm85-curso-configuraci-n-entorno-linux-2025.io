@@ -3,16 +3,13 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { fileURLToPath } from "url";
 
-// Configuramos las rutas compatibles para entornos TypeScript/Node modernos
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-export default defineConfig(({ command }) => ({
-  // CORREGIDO: Eliminamos '/malm85' del inicio. Solo debe ir el nombre del repositorio
-  base: process.env.NODE_ENV === 'production'
-    ? '/malm85-curso-configuraci-n-entorno-linux-2025.io/' 
-    : '/',
-    
+export default defineConfig({
+  // Forzamos la subruta del repositorio de forma directa y fija
+  base: '/malm85-curso-configuraci-n-entorno-linux-2025.io/',
+  
   plugins: [
     react()
   ],
@@ -21,4 +18,4 @@ export default defineConfig(({ command }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-}));
+});
