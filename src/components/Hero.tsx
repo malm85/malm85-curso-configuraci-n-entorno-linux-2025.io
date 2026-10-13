@@ -86,7 +86,7 @@ export function Hero() {
             <div className="relative">
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-large animate-float">
                 <img 
-                  src={`${import.meta.env.BASE_URL}profile-photo.jpg`} 
+                  src={`${import.meta.env.BASE_URL}${personal.profilePhoto}`} 
                   alt="Foto de Perfil" 
                   className="rounded-full object-cover ..."
                 />
